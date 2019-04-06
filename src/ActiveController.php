@@ -1,12 +1,12 @@
 <?php
 /**
- * @link http://www.Veobu.ru
+ * @link http://www.veo.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace Veobu\ExtRest;
+namespace veo\extrest;
 
-use Veobu\ExtRest\data\Serializer;
+use veo\extrest\data\Serializer;
 use yii\rest\ActiveController as BaseController;
 
 /**
@@ -21,7 +21,7 @@ class ActiveController extends BaseController
     {
         return [
             'index' => [
-                'class' => 'Veobu\ExtRest\actions\IndexAction',
+                'class' => 'veo\extrest\actions\IndexAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
             ],
@@ -31,13 +31,13 @@ class ActiveController extends BaseController
                 'checkAccess' => [$this, 'checkAccess'],
             ],
             'create' => [
-                'class' => 'Veobu\ExtRest\actions\CreateAction',
+                'class' => 'veo\extrest\actions\CreateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->createScenario,
             ],
             'update' => [
-                'class' => 'Veobu\ExtRest\actions\UpdateAction',
+                'class' => 'veo\extrest\actions\UpdateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->updateScenario,

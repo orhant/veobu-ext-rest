@@ -1,10 +1,10 @@
 <?php
 /**
- * @link http://www.Veobu.ru
+ * @link http://www.veo.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace Veobu\ExtRest\data;
+namespace veo\extrest\data;
 
 use Yii;
 use yii\data\ActiveDataProvider as BaseDataProvider;
