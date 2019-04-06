@@ -1,15 +1,15 @@
 <?php
 /**
- * @link http://www.tvip.ru
+ * @link http://www.Veobu.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace tvip\ExtJsRest;
+namespace Veobu\ExtRest;
 
 use Yii;
 use yii\helpers\ArrayHelper;
 use yii\rest\Controller as BaseController;
-use tvip\ExtJsRest\data\Serializer;
+use Veobu\ExtRest\data\Serializer;
 
 /**
  * @inheritdoc

@@ -42,7 +42,7 @@ namespace app\modules\api\components;
 
 use Yii;
 use yii\helpers\ArrayHelper;
-use Veobu\ExtJsRest\ActiveController;
+use Veobu\ExtRest\ActiveController;
 
 class Controller extends ActiveController
 {

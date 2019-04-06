@@ -1,10 +1,10 @@
 <?php
 /**
- * @link http://www.tvip.ru
+ * @link http://www.Veobu.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace tvip\ExtJsRest\actions;
+namespace Veobu\ExtRest\actions;
 
 use Yii;
 use yii\db\ActiveRecord;

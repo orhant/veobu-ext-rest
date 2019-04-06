@@ -1,12 +1,12 @@
 <?php
 /**
- * @link http://www.tvip.ru
+ * @link http://www.Veobu.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace tvip\ExtJsRest;
+namespace Veobu\ExtRest;
 
-use tvip\ExtJsRest\data\Serializer;
+use Veobu\ExtRest\data\Serializer;
 use yii\rest\ActiveController as BaseController;
 
 /**
@@ -21,7 +21,7 @@ class ActiveController extends BaseController
     {
         return [
             'index' => [
-                'class' => 'tvip\ExtJsRest\actions\IndexAction',
+                'class' => 'Veobu\ExtRest\actions\IndexAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
             ],
@@ -31,13 +31,13 @@ class ActiveController extends BaseController
                 'checkAccess' => [$this, 'checkAccess'],
             ],
             'create' => [
-                'class' => 'tvip\ExtJsRest\actions\CreateAction',
+                'class' => 'Veobu\ExtRest\actions\CreateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->createScenario,
             ],
             'update' => [
-                'class' => 'tvip\ExtJsRest\actions\UpdateAction',
+                'class' => 'Veobu\ExtRest\actions\UpdateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->updateScenario,

@@ -1,14 +1,14 @@
 <?php
 /**
- * @link http://www.tvip.ru
+ * @link http://www.Veobu.ru
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace tvip\ExtJsRest\actions;
+namespace Veobu\ExtRest\actions;
 
 use Yii;
 use yii\rest\IndexAction as Action;
-use tvip\ExtJsRest\data\ActiveDataProvider;
+use Veobu\ExtRest\data\ActiveDataProvider;
 
 /**
  * @inheritdoc
