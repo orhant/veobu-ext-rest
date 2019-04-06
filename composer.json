@@ -1,0 +1,32 @@
+{
+    "name": "orhant/veobu-ext-rest",
+    "description": "REST API for Sencha ExtJS 6",
+    "type": "yii2-extension",
+    "keywords": ["yii2", "yii 2", "extjs", "extjs6", "extjs5", "rest", "sencha", "API"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Orhan Tornaci",
+            "email": "orhantornaci@gmail.com",
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/orhant/veobu-ext-rest/issues?state=open",
+        "source": "https://github.com/orhant/veobu-ext-rest"
+    },
+    "require": {
+        "yiisoft/yii2": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Veobu\\ExtJsRest\\": "src/"
+        }
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
+ 
