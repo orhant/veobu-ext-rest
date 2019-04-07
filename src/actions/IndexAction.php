@@ -8,7 +8,7 @@ namespace veo\ExtRest\actions;
 
 use Yii;
 use yii\rest\IndexAction as Action;
-use veo\extrest\data\ActiveDataProvider;
+use veo\ExtRest\data\ActiveDataProvider;
 
 /**
  * @inheritdoc
