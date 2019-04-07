@@ -1,5 +1,5 @@
 {
-    "name": "veo/ExtRest",
+    "name": "veo/extrest",
     "description": "REST API for Sencha ExtJS 6",
     "type": "yii2-extension",
     "keywords": ["yii2", "yii 2", "extjs", "extjs6", "extjs5", "rest", "sencha", "API"],
