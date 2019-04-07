@@ -34,6 +34,28 @@ class Serializer extends BaseSerializer
      */
     public $metaEnvelope = 'metaData';
 
+
+    /**
+     * getCollectionEnvelope
+     *
+     * @return void
+     */
+    public function getCollectionEnvelope()
+    {
+        return $this->collectionEnvelope;
+    }
+
+    /**
+     * setCollectionEnvelope
+     *
+     * @param mixed $value
+     * @return void
+     */
+    public function setCollectionEnvelope($value)
+    {
+        $this->collectionEnvelope = trim($value);
+    }
+
     /**
      * @inheritdoc
      */

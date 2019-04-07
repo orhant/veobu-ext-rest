@@ -17,6 +17,14 @@ class ActiveController extends BaseController
     /**
      * @inheritdoc
      */
+
+    /**
+     * $collectionEnvelope
+     *
+     * @var string
+     */
+    public $collectionEnvelope = 'data';
+
     public function actions()
     {
         return [
@@ -58,6 +66,8 @@ class ActiveController extends BaseController
      */
     protected function serializeData($data)
     {
-        return \Yii::createObject(['class' => Serializer::className()])->serialize($data);
+        $s=\Yii::createObject(['class' => Serializer::className()]);
+        $s->__set('collectionEnvelope',$this->collectionEnvelope);
+        return $s->serialize($data);
     }
 }
