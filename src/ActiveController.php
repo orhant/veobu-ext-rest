@@ -4,9 +4,9 @@
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace veo\extrest;
+namespace veo\ExtRest;
 
-use veo\extrest\data\Serializer;
+use veo\ExtRest\data\Serializer;
 use yii\rest\ActiveController as BaseController;
 
 /**
@@ -21,7 +21,7 @@ class ActiveController extends BaseController
     {
         return [
             'index' => [
-                'class' => 'veo\extrest\actions\IndexAction',
+                'class' => 'veo\ExtRest\actions\IndexAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
             ],
@@ -31,13 +31,13 @@ class ActiveController extends BaseController
                 'checkAccess' => [$this, 'checkAccess'],
             ],
             'create' => [
-                'class' => 'veo\extrest\actions\CreateAction',
+                'class' => 'veo\ExtRest\actions\CreateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->createScenario,
             ],
             'update' => [
-                'class' => 'veo\extrest\actions\UpdateAction',
+                'class' => 'veo\ExtRest\actions\UpdateAction',
                 'modelClass' => $this->modelClass,
                 'checkAccess' => [$this, 'checkAccess'],
                 'scenario' => $this->updateScenario,

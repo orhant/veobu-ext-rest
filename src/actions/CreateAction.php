@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace veo\extrest\actions;
+namespace veo\ExtRest\actions;
 
 use Yii;
 use yii\helpers\Url;

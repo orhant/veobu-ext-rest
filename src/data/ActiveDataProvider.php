@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace veo\extrest\data;
+namespace veo\ExtRest\data;
 
 use Yii;
 use yii\data\ActiveDataProvider as BaseDataProvider;

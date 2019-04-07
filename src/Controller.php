@@ -4,7 +4,7 @@
  * @copyright Copyright (c) 2016 Tvip Ltd.
  */
 
-namespace veo\extrest;
+namespace veo\ExtRest;
 
 use Yii;
 use yii\helpers\ArrayHelper;
