@@ -45,7 +45,7 @@ class CreateAction extends Action
 
      
 
-        return $model;
+            return [$model];
     }
 }
 ?>
