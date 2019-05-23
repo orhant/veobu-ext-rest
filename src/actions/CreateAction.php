@@ -31,9 +31,9 @@ class CreateAction extends Action
             'scenario' => $this->scenario,
         ]);
         $params = array_keys(Yii::$app->getRequest()->getBodyParams());
-        foreach ($params as $param){
+       
 
-            $model->load(\yii\helpers\Json::decode($param), '');
+        $model->load(Yii::$app->getRequest()->getBodyParams(), '');
             if ($model->save()) {
                 $response = Yii::$app->getResponse();
                 $response->setStatusCode(201);
@@ -43,8 +43,9 @@ class CreateAction extends Action
                 throw new ServerErrorHttpException('Failed to update the object for unknown reason.');
             }
 
-        }
+     
 
         return $model;
     }
 }
+?>
